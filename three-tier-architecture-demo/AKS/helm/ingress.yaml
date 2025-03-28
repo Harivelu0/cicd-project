@@ -4,7 +4,7 @@ metadata:
   namespace: robot-shop
   name: robot-shop
 spec:
-  ingressClassName: azure-application-gateway
+  ingressClassName: nginx
   rules:
     - http:
         paths:
