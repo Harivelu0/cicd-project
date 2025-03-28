@@ -13,9 +13,10 @@ This project implements a modern DevOps workflow with:
 - **GitOps CD**: ArgoCD for declarative deployments
 - **Microservices**: Multiple containerized components working together
 
-![Architecture Diagram](path/to/architecture-diagram.png)
+
 
 ## Application Architecture
+![Untitled Diagram drawio](https://github.com/user-attachments/assets/d42a441b-4086-40b9-b221-09a62cc2b822)
 
 The deployed application is a voting system with the following components:
 
@@ -182,3 +183,13 @@ yq eval ".spec.template.spec.containers[0].image = \"$4.azurecr.io/$2:$3\"" -i k
    - Confirm NodePort services are properly configured
    - Verify network security group settings
 
+![Screenshot 2025-03-26 211930](https://github.com/user-attachments/assets/cff5b600-c375-4145-b4bc-38eb8f74def7)
+
+
+![Screenshot 2025-03-27 010630](https://github.com/user-attachments/assets/f9770b96-8c67-4b51-a041-ac8d255971f1)
+
+![Screenshot 2025-03-27 010603](https://github.com/user-attachments/assets/bd09298a-93b8-4cb7-bf79-34838306fbe4)
+
+![Screenshot 2025-03-27 010402](https://github.com/user-attachments/assets/4820b1b0-fb69-4ed5-9bf7-52169713437e)
+
+![Screenshot 2025-03-27 010326](https://github.com/user-attachments/assets/140cda42-92d2-4d3c-8cbf-b720c47c4d72)
