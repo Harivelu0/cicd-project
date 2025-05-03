@@ -1,12 +1,20 @@
-apiVersion: v1
-kind: Service
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: netflix-service
+  name: netflix
   namespace: netflix
 spec:
-  type: LoadBalancer
-  ports:
-  - port: 80
-    targetPort: 80
+  replicas: 2
   selector:
-    app: netflix
+    matchLabels:
+      app: netflix
+  template:
+    metadata:
+      labels:
+        app: netflix
+    spec:
+      containers:
+      - name: netflix
+        image: harivp1234/netflix:latest
+        ports:
+        - containerPort: 80
